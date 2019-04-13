@@ -45,4 +45,3 @@ while (i < pargs.length) {
 }
 
 process.args = Object.freeze(processArgs);
-console.log(process.args);
