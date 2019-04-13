@@ -5,5 +5,19 @@
   "main": "index.mjs",
   "scripts": {
     "start": "node --experimental-modules index.mjs"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobq/cli-args.git"
+  },
+  "keywords": [
+    "argument",
+    "args",
+    "option",
+    "parser",
+    "parsing",
+    "cli",
+    "command"
+  ],
+  "license": "MIT"
 }
