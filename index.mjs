@@ -46,4 +46,4 @@ while (i < pargs.length) {
     i++;
 }
 
-process.args = Object.freeze(processArgs);
+export default Object.freeze(processArgs);
