@@ -32,7 +32,6 @@ function setArgument(arg, value) {
 while (i < pargs.length) {
     const arg = pargs[i];
     if (arg[0] === PRECEDER) {
-        if (arg.length < 2) throw new Error(`Illegal empty argument '${arg}'`);
         if (arg[1] === PRECEDER) {
             const option = arg.slice(2);
             i++;
