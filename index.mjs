@@ -2,15 +2,6 @@ const PRECEDER = "-";
 const pargs = process.argv.slice(2); // preceding arguments
 
 const processArgs = {};
-let i = 0;
-if (pargs.length !== 0) {
-    const firstArg = pargs[0];
-    if (firstArg[0] === PRECEDER) {
-    } else {
-        i++;
-        processArgs.__MAIN = firstArg;
-    }
-}
 
 function setArgument(arg, value) {
     const argKeys = arg.split(".");
@@ -29,6 +20,15 @@ function setArgument(arg, value) {
     currentArgs[option] = value;
 }
 
+let i = 0;
+if (pargs.length !== 0) {
+    const firstArg = pargs[0];
+    if (firstArg[0] === PRECEDER) {
+    } else {
+        i++;
+        processArgs.__MAIN = firstArg;
+    }
+}
 while (i < pargs.length) {
     const arg = pargs[i];
     if (arg[0] === PRECEDER) {
