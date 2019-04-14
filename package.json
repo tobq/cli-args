@@ -4,7 +4,8 @@
   "author": "Tobi Akinyemi",
   "main": "index.mjs",
   "scripts": {
-    "start": "node --experimental-modules index.mjs"
+    "start": "node --experimental-modules index.mjs",
+    "test": "node --experimental-modules test optionalMainArg -flag --option value --options.first 1 --options.second 2"
   },
   "repository": {
     "type": "git",
